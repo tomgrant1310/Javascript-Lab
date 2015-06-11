@@ -1,0 +1,26 @@
+"Given an array, a, return a second array whose elements represent squares of those from the first array.”
+
+So, in the example, we have a as [1,2,9], so when we call our function and pass this as the argument, the result should be [1,4,81] (i.e. [1*1, 2*2, 9*9]).
+
+Inside the function, which we call “square”, we first create an empty array (to hold the results) at the line commented in your code as (1).
+
+Then we add the elements to this array one by one. So the loop at the line commented (2) is controlling us stepping through all the elements in the original array, one at a time. The loop initialises the variable i to 0, then executes the loop body followed by incrementing i, until i is greater than the number of elements in the array a.
+
+The line (3) is where we specify what each element in the result array should be. For element index 0 ( i.e. the variable i has value 0 )  we take a[i] (in other words a[0], the first element of the array), square it and set element index 0 in the result array to hold the result of the calculation. We use square brackets [ ] to access an element in an array - don’t confuse this with parentheses ( ), which is used to call a function. So what actually happens will look like this:
+
+    resultArray[0] = a[0] * a[0]
+
+After this, the next iteration of the loop (2) runs with the variable i set to 1, so we end up doing
+
+   resultArray[1] = a[1] * a[1]
+
+And the next will be
+
+   resultArray[2] = a[2] * a[2]
+
+Now we find that i has the value 3, which is greater than a.length, so the looping stops.
+
+Now resultArray contains the results of our calculation (in this case  [1, 4, 81] ).
+Line (4) says that the function should return this to the caller. This means that in line (5) the call to square(a1) results in the array [1, 4, 81].
+
+Hope this makes some sense to you. I suspect you confused the square brackets in a[i], which means “the element at index i in the array a” with similar syntax a(i), where the parentheses mean “call the function a and pass it the argument i”.
