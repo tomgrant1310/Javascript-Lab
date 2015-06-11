@@ -7,30 +7,45 @@
 <body>
 <script>
 
-    
-
-
-var a1 = [1,2,9];
-
-console.log( "Squared: " + square( a1 ));
 
 
 
-function square ( firstParameter ) { //defines the function with the parameter
+    var a1 = [1,2,9];
 
-    var resultArray = [];//sets an empty array
+    console.log( "Squared: " + square( a1 ));
 
-    for ( var i = 0; i < firstParameter.length; i++ )//sets the incrementer
-    {
-        resultArray[i] = firstParameter[i] * firstParameter[i] ;//takes what is in the array when called and squares it In this case you are taking i and applying the following function a to it.
+
+    function square ( firstParameter ) { //defines the function with the parameter
+
+        var resultArray = [];//sets an empty array
+
+        for ( var i = 0; i < firstParameter.length; i++ )//sets the incrementer
+        {
+            resultArray[i] = firstParameter[i] * firstParameter[i] ;//takes what is in the array when called and squares it In this case you are taking i and applying the following function a to it.
+        }
+        return resultArray;
     }
-    return resultArray;
-}
 
 
 
+    var numbersToPassIn = [1, 2, 3];
+
+    console.log ("Doubled:" + funcdouble (numbersToPassIn)   );
 
 
+
+    function funcdouble (secondParameter) {
+
+        var doubleArray = [];
+
+        for (var i =0; i < secondParameter.length; i++)// sets the incrementer
+        {
+            doubleArray[i] = secondParameter[i] * 2;
+
+        }
+
+        return doubleArray;
+    }
 
 
 
