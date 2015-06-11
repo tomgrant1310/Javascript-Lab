@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">s
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+//    Write a JavaScript that prompts the user to enter a number,
+//    verify that the data entered can indeed be turned into an integer
+//    number (a whole number) using parseInt(). If not, then display an error message.
+//    If so, then display the number. Use an alert() box for both of these.
+
+
+var initial = prompt ("Please enter a number");
+
+        counter   = 0;
+
+
+function checkNumber(numberTocheck) {
+    return /^[0-9]+$/.test (numberTocheck);
+}
+
+while (!checkNumber(initial) || counter > 10) {
+
+    initial = prompt("please enter a number\r\n" + initial + " is not a number");
+    counter++;
+
+}
+
+if(checkNumber(initial)) {
+    alert("yes " + initial + " is a number");
+} else {
+
+    alert("no number was found");
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

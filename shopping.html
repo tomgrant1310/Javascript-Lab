@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>test javascript files</title>
+</head>
+<body>
+<script>
+
+
+var quantity,
+isNum1 = null,
+conItems1;
+counter = 0;
+
+while (!isNum1 && counter < 2) {//no protect
+
+var text = "Please enter then number of items you have bought";
+
+    counter++;
+
+if (false === isNum1) {
+text += " - Error: invalid Number";
+}
+quantity = prompt (text);
+
+isNum1 = /^[0-9]+$/. test(quantity);
+
+console.log ('inside while', isNum1);
+
+
+
+}
+
+
+
+conItems1 = parseInt (quantity);
+
+var unitPrice = prompt("Please enter the unit price in pounds and pence spearated with a dot");
+
+//validate whether first number is a number and convert from string to number
+
+var isNum1 = /^[0-9]+$/. test (quantity);
+
+console.log (typeof (isNum1));
+var conItems1 = parseInt (quantity);
+console.log (typeof (conItems1));
+
+//validate whether second number is a number and convert from string to number
+
+
+var isNum2 = /^[0-9]+$/. test (quantity);
+
+
+console.log (typeof (isNum2));
+var conItems2 = parseInt (unitPrice);
+console.log (typeof (conItems2));
+
+
+//alert ("Your order comes to " +(conItems1 * conItems2));
+
+while (isNum2===true) {
+alert ("Your order comes to: " + (quantity * unitPrice) )
+}
+
+</script>
+</body>
+</html>
