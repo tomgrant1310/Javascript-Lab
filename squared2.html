@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+function square ( a ) { //defines the function with the paramter a
+
+var resultArray = [];//sets an empty array  (1)
+
+for ( var counter = 0; counter < a.length; counter++ )//sets the incrementer  (2)
+{
+resultArray[counter] = a[counter] * a[counter]; //takes what is in the array when called and squares it //(3)
+…
+// In this case you are taking "i" and applying the function a to it.
+}
+return resultArray;    //(4)
+}
+var numbersToSquare = [1,2,9];
+
+console.log( "Squared: " + square( numbersToSquare ));  // (5)
+
+</script>
+
+</body>
+</html>

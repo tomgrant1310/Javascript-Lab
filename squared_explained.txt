@@ -24,3 +24,19 @@ Now resultArray contains the results of our calculation (in this case  [1, 4, 81
 Line (4) says that the function should return this to the caller. This means that in line (5) the call to square(a1) results in the array [1, 4, 81].
 
 Hope this makes some sense to you. I suspect you confused the square brackets in a[i], which means “the element at index i in the array a” with similar syntax a(i), where the parentheses mean “call the function a and pass it the argument i”.
+
+
+function square ( a ) { //defines the function with the paramter a
+
+    var resultArray = [];//sets an empty array  (1)
+
+    for ( var i = 0; i < a.length; i++ )//sets the incrementer  (2)
+    {
+        resultArray[i] = a[i] * a[i]; //takes what is in the array when called and squares it //(3)
+        // In this case you are taking "i" and applying the function a to it.
+    }
+    return resultArray;    //(4)
+}
+var a1 = [1,2,9];
+
+console.log( "Squared: " + square( a1 ));  // (5)
