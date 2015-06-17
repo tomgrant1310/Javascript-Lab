@@ -19,16 +19,18 @@ var text = "Please enter then number of items you have bought";
 
     counter++;
 
-if (false === isNum1) {
-text += " - Error: invalid Number";
-}
+    if (false === isNum1) {
+    text += " - Error: invalid Number";
+    }
 quantity = prompt (text);
 
 isNum1 = /^[0-9]+$/. test(quantity);
 
 console.log ('inside while', isNum1);
 
+    conItems1 = parseInt (quantity);
 
+console.log(conItems1)
 
 }
 

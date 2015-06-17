@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script>
+        function countNameElements() {
+            var n =
+                    document.getElementsByName("nameField")
+            alert("There are " + n.length
+            + " nameField elements!")
+        }
+    </script>
+</head>
+<body>
+<input name="nameField" type="text"></br>
+<input name="anotherField" type="text"></br>
+<input name="nameField" type="text"></br>
+<input type="button" value="How many nameFields?"
+       onclick="countNameElements()">
+</body>
+</html> 
